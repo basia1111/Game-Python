@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+{% endblock %}
+{% block body %}
+
+
+
+<div class="div1"> <p> HOT SEAT</p> <p>RUCH:{% if player =='p'%} PIRATÓW {% else %} HISZPAN {% endif %}</p></div>
+
+<div class="div3">
+<div class="scores">
+<p> Hiszpanie </p>
+    <p>Kapitan: {{ game.players[1].name }}</p>
+
+           <table >
+           <p>ZDOBYTE STATKI  |   PUNKTY:{{ spanish }}</p>
+
+         <tr>
+
+             {% if game.players[1].defeated_ships[0]  %}  <td class="zdobyte"> <div class="{{game.players[1].defeated_ships[0]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td> {% endif %}
+    {% if game.players[1].defeated_ships[1]  %} <td class="zdobyte"> <div class="{{game.players[1].defeated_ships[1]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td>{% endif %}
+    {% if game.players[1].defeated_ships[2]  %}<td class="zdobyte"> <div class="{{game.players[1].defeated_ships[2]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td> {% endif %}
+
+        </tr>
+                   <tr>
+
+             {% if game.players[1].defeated_ships[3]  %}  <td class="zdobyte"> <div class="{{game.players[1].defeated_ships[3]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td> {% endif %}
+             {% if game.players[1].defeated_ships[4]  %} <td class="zdobyte"> <div class="{{game.players[1].defeated_ships[4]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td>{% endif %}
+            {% if game.players[1].defeated_ships[5]  %}<td class="zdobyte"> <div class="{{game.players[1].defeated_ships[5]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td> {% endif %}
+
+        </tr>
+        </table>
+</div>
+</div>
+<div class="div2">
+    <table class="board">
+    {% for x in range(4) %}
+        <tr>
+        {% for y in range(4) %}
+            {% if (x,y) in [(0,0),(0,3),(3,0),(3,3)] %}
+                <td>&nbsp;</td>
+            {% elif (x,y) in fields %}
+                <td><div class="free"></div></td>
+            {% else: %}
+                {% for ship in game.ships %}
+                    {% if  game.ships[ship].state == 'visible'%}
+                    {% if game.ships[ship].x == x and game.ships[ship].y == y%}
+                        <td class="cell">
+
+                                 {% if game.ships[ship].status == "down" %}
+                                     <a href="/hot_seat/board/move/{{ game.ships[ship].name}}">
+                                      <div class="card"> </div>
+                                     </a>
+                                 {%else %}
+                                     {% if game.ships[ship].fleet in player %}
+                                         <a href="/hot_seat/board/move/{{ game.ships[ship].name}}">
+                                      <div class="{{ game.ships[ship].name }} {{ game.ships[ship].direction }}">{% if game.ships[ship].defeated %} 2x{% endif %}</div>
+                                         </a>
+                                         {% else %}
+                                          <div class="{{ game.ships[ship].name }} {{ game.ships[ship].direction }}">{% if game.ships[ship].defeated %} 2x{% endif %}</div>
+
+                                    {% endif %}
+                                 {% endif %}
+
+                        </td>
+                    {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+         </tr>
+    {% endfor %}
+    </table>
+</div>
+<div class="div4">
+<div class="scores">
+     <p>Piraci</p>
+    <p>Kapitan: {{ game.players[0].name }}</p>
+
+
+             <table >
+           <p>ZDOBYTE STATKI  |   PUNKTY:{{ pirates }}</p>
+
+         <tr>
+
+             {% if game.players[0].defeated_ships[0]  %}  <td class="zdobyte"> <div class="{{game.players[0].defeated_ships[0]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td> {% endif %}
+             {% if game.players[0].defeated_ships[1]  %} <td class="zdobyte"> <div class="{{game.players[0].defeated_ships[1]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td>{% endif %}
+             {% if game.players[0].defeated_ships[2]  %}<td class="zdobyte"> <div class="{{game.players[0].defeated_ships[2]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td> {% endif %}
+
+        </tr>
+                   <tr>
+
+             {% if game.players[0].defeated_ships[3]  %}  <td class="zdobyte"> <div class="{{game.players[0].defeated_ships[3]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td> {% endif %}
+             {% if game.players[0].defeated_ships[4]  %} <td class="zdobyte"> <div class="{{game.players[0].defeated_ships[4]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td>{% endif %}
+            {% if game.players[0].defeated_ships[5]  %}<td class="zdobyte"> <div class="{{game.players[0].defeated_ships[5]}}_zdobyte"></div></td>{% else %}<td class="zdobyte"></td> {% endif %}
+
+        </tr>
+        </table>
+</div>
+ </div>
+
+
+{% endblock %}

@@ -1,0 +1,195 @@
+body{
+    width:100vw;
+    height: 100vh;
+    background-image: url("plansza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    color: #231709;
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    justify-items: center;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
+
+}
+
+.scores{
+   grid-area: 2 / 2 / 3 / 3;
+    background-image: url("wood.jpg");
+    background-size: cover;
+    width:100%;
+    height:100%;
+    padding: 15px;
+
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+    inset 0px -5px 0px 0px rgba(0, 0, 0, 0.3),
+    inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+.zdobyte{
+    width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+    background-color:#231709;
+
+}
+
+.Dark_Howler_zdobyte{
+      background-image: url("Dark_Howler.png");
+      background-size: contain;
+       display: block;
+       width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Deadly_Destiny_zdobyte{
+      background-image: url("Deadly_Destiny.png");
+      background-size: contain;
+      display: block;
+        width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Santa_Maria_zdobyte{
+      background-image: url("Santa_Maria.png");
+      background-size: contain;
+       display: block;
+        width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Fish_Fryer_zdobyte{
+     background-image: url("Fish_Fryer.png");
+      background-size: contain;
+       display: block;
+      width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Revenge_Tide_zdobyte {
+    background-image: url("Revenge_Tide.png");
+    background-size: contain;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius: 5px;
+}
+.Bloody_Hangman_zdobyte{
+      background-image: url("Bloody_Hangman.png");
+      background-size: contain;
+      display: block;
+       width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Old_James_zdobyte{
+      background-image: url("Old_James.png");
+      background-size: contain;
+      display: block;
+       width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.White_Shark_zdobyte{
+      background-image: url("White_Shark.png");
+      background-size: contain;
+      display: block;
+    width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Jolly_Roger_zdobyte{
+      background-image: url("Jolly_Roger.png");
+      background-size: contain;
+      display: block;
+       width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Black_Pearl_zdobyte{
+background-image: url("Black_Pearl.png");
+      background-size: contain;
+      display: block;
+      width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Marco_Polo_zdobyte{
+      background-image: url("Marco_Polo.png");
+      background-size: contain;
+      display: block;
+        width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Florencia_zdobyte {
+    background-image: url("Florencia.png");
+    background-size: contain;
+    display: block;
+    width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+a {text-decoration: none}
+.button {
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+    border: none;
+    display: inline-block;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+    inset 0px -5px 0px 0px rgba(0, 0, 0, 0.3),
+    inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 5px;
+    background-color: blanchedalmond;
+    color: #231709;
+
+
+}
+.button:hover{
+    transform: scale(110%);
+}
+.button:active {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+    inset 0px -4px 0px 0px rgba(0,0,0,0.3),
+    inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+    top: 3px;
+}
+
+.button div {
+    padding: 10px 30px 12px 30px;
+    color: #231709;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.button:active div {
+    padding-bottom: 12px;
+}

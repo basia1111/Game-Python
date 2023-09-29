@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/end.css') }}">
+
+{% endblock %}
+{% block body %}
+
+<div class="scores">
+
+<h1>ZASADY</h1>
+
+    <p> 1.Gra przeznaczona jest dla 2 osób i jest pojedynkiem flot pirackiej z hiszpańską w pobliżu wyspy Tortugi.</p>
+    <p> 2.Gracze dysponują 6 okrętami, po 2: jedno-, dwu- i trzymasztowymi. </p>
+    <p> 3.Okręty poruszają się po 12 polach rozmieszczonych na planszy. </p>
+    <p> 4.Pionki są dwustronne: jedna strona to okręt, druga to morze. Gra zaczyna się z zakrytymi okrętaki, raz odkryteo okrętu nie można ponownie zaslonić </p>
+    <p> 5.Każdy okręt ma 3 istotne dla gry informacje: kolor określający przynależność do gracza, kierunek ruchu wskazany przy pomocy kropek oraz ile jest wart punktów. Przykładowo: okręt dwumasztowy może poruszać się w 2 kierunkach i przynosi 2 punkty po jego zdobyciu.
+    <p> 6.Okręty poruszają się dziobem do przodu lub na skos, ale też wykonują zwroty.</p>
+    <p> 7.Gracze na zmianę wykonują 1 z 3 możliwych akcji:
+    <ul>
+    <li> Odsłaniają 1 zakryty pionek, układając go obrazkiem okrętu do góry w dowolnym kierunku na tym samym polu gry,</li>
+    <li> Przemieszczają statek o 1 pole w kierunku określonym przez kropki,</li>
+    <li> Obracają pionek w dowolną stronę.</li>
+    </ul>
+    <p> 8. Statek może wpłynąć na puste pole na planszy lub pionek odwrócony stroną z morzem ku górze. Może też wpłynąć na pole zajęte przez pionek przeciwnika zdobywając go. Wygrywa osoba, która zdobędzie wszytskie okręty przeciwnika.</p>
+
+    <a href="/">
+        <div class="button button_background" >
+                <div>Wszystko jasne!</div>
+        </div>
+     </a>
+
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

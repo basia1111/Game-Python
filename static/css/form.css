@@ -1,0 +1,84 @@
+body{
+    width: 100vw;
+    height: 100vh;
+ font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    background-color: #E8E2D6;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.form_item{
+    margin: 5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img {
+
+    width: 180px;
+    height: 180px;
+}
+
+.img img {
+     object-fit: cover;
+       width: 100%;
+       height: 100%;
+}
+.rotate{
+    transform: scaleX(-1);
+}
+form{
+    text-align: center;
+}
+.button {
+
+    position: relative;
+    border: none;
+    display: inline-block;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+    inset 0px -5px 0px 0px rgba(0, 0, 0, 0.3),
+    inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 5px;
+     background-image: url("wood.jpg") ;
+    background-size: cover;
+     text-shadow:1px 1px 0px rgba(0,0,0,0.4);
+    font-size: large;
+    padding: 10px 20px 12px 20px;
+    color: #231709;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-weight: bold;
+
+
+}
+.button:hover{
+    transform: scale(110%);
+}
+.button:active {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+    inset 0px -4px 0px 0px rgba(0,0,0,0.3),
+    inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+    top: 3px;
+}
+
+
+.button:active div {
+    padding-bottom: 12px;
+}
+
+.input{
+    padding: 10px;
+    border-radius: 4px;
+}
+.input:focus {
+  border: 3px solid saddlebrown;
+    outline: none;
+}

@@ -1,0 +1,79 @@
+body {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("tło_home.jpg");
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr 3fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+}
+.div1 {grid-area: 1 / 1 / 2 / 3;
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: left;}
+.div1 img{
+       object-fit: cover;
+       width: 50%;
+       height: 100%;
+}
+.div3 { grid-area: 3 / 1 / 4 / 2;
+    margin-left: 15%;
+     margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+
+a {text-decoration: none}
+.button {
+    padding: 10px;
+    position: relative;
+    border: none;
+    display: inline-block;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+    inset 0px -5px 0px 0px rgba(0, 0, 0, 0.3),
+    inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 5px;
+
+
+}
+.button:hover{
+    transform: scale(110%);
+}
+.button:active {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+    inset 0px -4px 0px 0px rgba(0,0,0,0.3),
+    inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+    top: 3px;
+}
+
+.button div {
+    padding: 10px 30px 12px 30px;
+    color: #231709;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.button:active div {
+    padding-bottom: 12px;
+}
+
+.button_background {
+    background-image: url("wood.jpg");
+
+    background-size: cover;
+     text-shadow:1px 1px 0px rgba(0,0,0,0.4)
+
+}
+#rules{
+     color: bisque;
+}

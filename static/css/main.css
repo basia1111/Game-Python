@@ -1,0 +1,322 @@
+body{
+       width:100%;
+      height: 100%;
+  background-image: url("plansza.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+       color: #231709;
+        font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.4);
+
+display: grid;
+grid-template-columns: 1.5fr 2fr 1.5fr;
+grid-template-rows: 1fr 2fr 2fr 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+       justify-items: center;
+
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 4;
+text-align: center;
+color: beige;
+text-shadow:none;}
+.div1 img{
+    width: 100%;
+    height: 100%;
+}
+.div2 { grid-area: 2 / 2 / 5 / 3; }
+.div3 { grid-area: 3 / 1 / 5 / 2;}
+.scores{background-image: url("wood.jpg") ;
+    background-size: cover;
+    width:90%;
+    height:90%;
+    padding: 15px;
+
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
+    inset 0px -5px 0px 0px rgba(0, 0, 0, 0.3),
+    inset 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+
+.div4 { grid-area: 3 / 3 / 5 / 4;}
+
+
+.board{
+  padding: 0.5rem;
+}
+.link {
+   text-decoration:none;
+}
+.cell{
+      width: 95px;
+      height:95px;
+      border-radius: 5px;
+
+}
+.card{
+      background-image: url("card.png");
+      background-size: contain;
+      display: block;
+      width: 95px;
+      height:95px;
+    border-radius: 5px;
+}
+.Dark_Howler{
+      background-image: url("Dark_Howler.png");
+      background-size: contain;
+       display: block;
+      width: 95px;
+      height:95px;
+    border-radius: 5px;
+}
+.Deadly_Destiny{
+      background-image: url("Deadly_Destiny.png");
+      background-size: contain;
+      display: block;
+      width: 95px;
+      height:95px;
+    border-radius: 5px;
+}
+.Santa_Maria{
+      background-image: url("Santa_Maria.png");
+      background-size: contain;
+       display: block;
+      width: 95px;
+      height:95px;
+    border-radius: 5px;
+}
+.Fish_Fryer{
+     background-image: url("Fish_Fryer.png");
+      background-size: contain;
+       display: block;
+      width: 95px;
+      height:95px;
+    border-radius: 5px;
+}
+.Revenge_Tide{
+      background-image: url("Revenge_Tide.png");
+      background-size: contain;
+      display: block;
+      width: 95px ;
+      height:95px;
+    border-radius: 5px;
+}
+.Bloody_Hangman{
+      background-image: url("Bloody_Hangman.png");
+      background-size: contain;
+      display: block;
+      width: 95px ;
+      height:95px;
+    border-radius: 5px;
+}
+.Old_James{
+      background-image: url("Old_James.png");
+      background-size: contain;
+      display: block;
+      width: 95px ;
+      height:95px;
+    border-radius: 5px;
+}
+.White_Shark{
+      background-image: url("White_Shark.png");
+      background-size: contain;
+      display: block;
+      width: 95px ;
+      height:95px;
+    border-radius: 5px;
+}
+.Jolly_Roger{
+      background-image: url("Jolly_Roger.png");
+      background-size: contain;
+      display: block;
+      width: 95px ;
+      height:95px;
+    border-radius: 5px;
+}
+.Black_Pearl{
+background-image: url("Black_Pearl.png");
+      background-size: contain;
+      display: block;
+      width: 95px;
+      height:95px;
+    border-radius: 5px;
+}
+.Marco_Polo{
+      background-image: url("Marco_Polo.png");
+      background-size: contain;
+      display: block;
+      width: 95px ;
+      height:95px;
+}
+.Florencia {
+    background-image: url("Florencia.png");
+    background-size: contain;
+    display: block;
+    width: 95px;
+    height: 95px;
+    border-radius: 5px;
+}
+.up{
+ transform: rotate(270deg)
+}
+.down{
+ transform: rotate(90deg)
+
+}
+.left{
+   transform: scaleX(-1);
+}
+.right{
+  transform: rotate(0deg)
+}
+
+.score{
+      width: 40px;
+      height:40px;
+      border: solid 2px black;
+}
+
+.free{
+         width: 95px;
+         height:95px;
+         border: solid 1px black;
+         display: block;
+    border-radius: 5px;
+
+}
+
+.zdobyte{
+    width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+    background-color:#231709;
+
+}
+
+.Dark_Howler_zdobyte{
+      background-image: url("Dark_Howler.png");
+      background-size: contain;
+       display: block;
+       width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Deadly_Destiny_zdobyte{
+      background-image: url("Deadly_Destiny.png");
+      background-size: contain;
+      display: block;
+        width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Santa_Maria_zdobyte{
+      background-image: url("Santa_Maria.png");
+      background-size: contain;
+       display: block;
+        width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Fish_Fryer_zdobyte{
+     background-image: url("Fish_Fryer.png");
+      background-size: contain;
+       display: block;
+      width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Revenge_Tide_zdobyte {
+    background-image: url("Revenge_Tide.png");
+    background-size: contain;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius: 5px;
+}
+.Bloody_Hangman_zdobyte{
+      background-image: url("Bloody_Hangman.png");
+      background-size: contain;
+      display: block;
+       width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Old_James_zdobyte{
+      background-image: url("Old_James.png");
+      background-size: contain;
+      display: block;
+       width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.White_Shark_zdobyte{
+      background-image: url("White_Shark.png");
+      background-size: contain;
+      display: block;
+    width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Jolly_Roger_zdobyte{
+      background-image: url("Jolly_Roger.png");
+      background-size: contain;
+      display: block;
+       width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Black_Pearl_zdobyte{
+background-image: url("Black_Pearl.png");
+      background-size: contain;
+      display: block;
+      width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Marco_Polo_zdobyte{
+      background-image: url("Marco_Polo.png");
+      background-size: contain;
+      display: block;
+        width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.Florencia_zdobyte {
+    background-image: url("Florencia.png");
+    background-size: contain;
+    display: block;
+    width:45px;
+    height: 45px;
+    border: solid 1px #231709;
+    border-radius:5px;
+}
+.rotation{
+    text-shadow:none;
+    text-decoration: none;
+    color: beige;
+}
+
+.rotation:hover{
+    transform: scale(110%);
+}
+
+.def{
+    width:70px;
+    height: 70px;
+
+}

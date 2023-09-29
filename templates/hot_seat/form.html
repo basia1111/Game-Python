@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+{% endblock %}
+{% block body %}
+
+<form method="post">
+
+
+<div class="container">
+
+     <div class="form_item">
+
+        <img class="img" src="{{url_for('static', filename='f.png')}}" />
+        <h1>Hiszpanie</h1>
+        <input id="name_s" name="name_s" class="input"  value="imię gracza" required>
+     </div>
+
+    <div class="form_item">
+
+        <img class="img rotate" src="{{url_for('static', filename='bp.png')}}" />
+        <h1>Piraci</h1>
+        <input id="name_p" name="name_p" class="input"  value="imię gracza" required>
+    </div>
+
+
+
+
+</div>
+
+<input class="button" type="submit" value="ROZPOCZNIJ GRĘ" >
+</form>
+
+
+{% endblock %}

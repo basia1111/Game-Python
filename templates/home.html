@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+ {% block head %}
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+ {% endblock %}
+{% block body %}
+
+
+
+<div class="div1"><img src="static/css/tytuł.png"/></div>
+
+<div class="div3">
+
+    <a href="/solo/form">
+        <div class="button button_background">
+                <div>SINGLE</div>
+        </div>
+    </a>
+
+     <a href="/hot_seat/form">
+        <div class="button button_background" >
+                <div>HOT SEAT</div>
+        </div>
+     </a>
+
+
+
+       <a href="/rules">
+        <div class="button button_background" >
+                <div id="rules">RULES</div>
+        </div>
+     </a>
+
+
+
+</div>
+
+
+
+{% endblock %}
