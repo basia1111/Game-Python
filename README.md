@@ -13,28 +13,6 @@
 
 - **Strategic Gameplay**: Plan your move and outsmart your opponents in a strategic showdown.
 
-## Getting Started
-
-1. **Prerequisites**: Ensure you have Python 3.x installed on your system.
-
-2. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/basia1111/Game-Python.git
-   ```
-
-3. **Navigate to the Directory**:
-   ```bash
-   cd Game-Python
-   ```
-
-4. **Run the Game**:
-   ```bash
-   python main.py
-   ```
-
-5. **Choose Your Game Mode**:
-   - For Solo Mode, select "Solo" from the main menu.
-   - For Hottest Mode, select "Hottest" and follow the on-screen instructions.
 
 ## Acknowledgments
 
