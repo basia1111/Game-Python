@@ -1,6 +1,8 @@
 # Bitwa o Tortugę (Battle for Tortuga)
-![Screenshot](screenshot1.png)
-![Screenshot](screenshot2.png)
+
+<img src="screenshot1.png" width="500" height="250">
+<img src="screenshot2.png" width="500" height="250">
+
 
 ## Play the Game Online!
 
